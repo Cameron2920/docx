@@ -114,7 +114,7 @@ module Docx
         end
 
         def hyperlink_id
-          @node.attributes['id'].value
+          @node.attributes['id']&.value
         end
 
         def font_size
